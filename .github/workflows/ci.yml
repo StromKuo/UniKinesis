@@ -1,0 +1,43 @@
+name: CI
+on:
+  push:
+    branches:
+      - upm
+
+jobs:
+  semantic-release:
+    name: Run Semantic Release on upm branch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout upm branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Cache npm dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install and Build npm Project
+        working-directory: Editor/aws-kinesis-npm-project~
+        run: |
+          npm ci
+          npx webpack
+
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v4
+        with:
+          extra_plugins: |
+            @semantic-release/changelog
+            @semantic-release/git
+        env:
+          GITHUB_TOKEN: ${{ secrets.CI_TOKEN }}
