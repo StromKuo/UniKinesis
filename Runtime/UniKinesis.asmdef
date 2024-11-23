@@ -1,0 +1,19 @@
+{
+    "name": "UniKinesisSDK",
+    "rootNamespace": "UniKinesisSDK",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "AWSSDK.CognitoIdentity.dll",
+        "AWSSDK.Core.dll",
+        "AWSSDK.Kinesis.dll",
+        "AWSSDK.SecurityToken.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
