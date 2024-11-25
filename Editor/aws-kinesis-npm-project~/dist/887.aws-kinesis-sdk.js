@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkaws_sdk_bundle=self.webpackChunkaws_sdk_bundle||[]).push([[887],{7887:(e,t,d)=>{d.d(t,{CognitoIdentityClient:()=>n.D,GetCredentialsForIdentityCommand:()=>s.t,GetIdCommand:()=>a.x});var n=d(4636),s=d(5351),a=d(3749)}}]);
