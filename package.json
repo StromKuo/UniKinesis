@@ -1,6 +1,6 @@
 {
     "name": "com.strodio.unikinesis-sdk",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "displayName": "UniKinesis SDK",
     "description": "AWS Kinesis SDK for Unity Native App and WebGL",
     "unity": "2021.2",
