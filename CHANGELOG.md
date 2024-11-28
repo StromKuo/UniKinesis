@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/StromKuo/UniKinesis/compare/v2.0.1...v2.0.2) (2024-11-28)
+
+
+### Bug Fixes
+
+* resolve missing distributed JS files ([c0ca4fb](https://github.com/StromKuo/UniKinesis/commit/c0ca4fb8e9e10f5338d38315b5213fb2c1809a04))
+
 ## [2.0.1](https://github.com/StromKuo/UniKinesis/compare/v2.0.0...v2.0.1) (2024-11-28)
 
 
